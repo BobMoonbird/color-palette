@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Formular";
+    src: url("https://miro.com/app/static/static/fonts/general/FormularRegular/formular-regular.4b9930.woff2");
+}
+
+::-webkit-scrollbar {
+    width: 2.5%;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C1C1C1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.formatted-text {
+    font-family: Formular, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: cadetblue;
+    margin: 0;
+}
+
+.white-back {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 50px;
+}
+
+.section:before {
+    margin-left: 30px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 1px solid #C1C1C1;
+    width: calc(100% - 50px);
+    transform: translateY(-50%);
+}
+
+.section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+}
+
+.section-text {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+}
+
+.color-types-container {
+    display: block;
+    padding: 20px;
+}
+
+.color-type {
+    display: inline-block;
+}
+
+.colors-container {
+    display: grid;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    vertical-align: middle;
+    justify-content: space-between;
+    grid-row-gap: 10px;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.color:hover {
+    border: #000 solid 1px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.color {
+    display: block;
+    align-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: #C5C5C5 solid 1px;
+    cursor: pointer;
+}
+
+.center {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    position: absolute;
+}
+
+.custom-check-box {
+    height: 42px;
+    width: 42px;
+}
+
+.selected {
+    border: #000 solid 2px;
+    margin-right: -2px;
+    margin-top: -2px;
+}
+
+.selected:hover {
+    border: #000 solid 2px;
+    margin-right: -2px;
+    margin-top: -2px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    width: 150px;
+    line-height: 100%;
+    height: 20px;
+    border: #C5C5C5 solid 1px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.button:hover {
+    border: black solid 1px;
+    cursor: pointer;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 30px;
+}
